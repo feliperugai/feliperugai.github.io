@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Política de Privacidade — OpenClaw</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa;
+    --fg: #1a1a18;
+    --muted: #6b6b63;
+    --rule: #e3e3dd;
+    --link: #2f5d50;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#161614; --fg:#eceae4; --muted:#9a9a90; --rule:#2e2e2a; --link:#8fc5b2; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 38rem; margin: 0 auto; padding: 5rem 1.5rem 6rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: .9375rem; }
+  h2 { font-size: 1rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+  li { margin-bottom: .35rem; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">OpenClaw &middot; atualizada em 19 de novembro de 2026</p>
+
+  <p>
+    OpenClaw é uma ferramenta pessoal de linha de comando, executada no computador do
+    próprio usuário. Não há servidor, back-end ou serviço hospedado.
+  </p>
+
+  <h2>Dados acessados</h2>
+  <p>
+    Mediante autorização explícita via OAuth, o aplicativo acessa duas APIs do Google,
+    restritas à conta que concede a autorização:
+  </p>
+  <ul>
+    <li><strong>Google Drive</strong> — listar, baixar e substituir arquivos indicados pelo usuário.</li>
+    <li><strong>Google Sheets</strong> — ler e gravar células em planilhas indicadas pelo usuário.</li>
+  </ul>
+  <p>
+    O aplicativo não acessa e-mail, contatos, agenda, fotos ou qualquer outro serviço do Google.
+  </p>
+
+  <h2>Uso dos dados</h2>
+  <p>
+    Os dados são usados exclusivamente para executar a operação pedida pelo usuário no
+    momento em que ele a pede. Nada é analisado, perfilado ou reaproveitado para outra
+    finalidade.
+  </p>
+
+  <h2>Armazenamento</h2>
+  <ul>
+    <li>
+      O token de autorização OAuth fica armazenado localmente, no chaveiro do sistema
+      operacional do usuário.
+    </li>
+    <li>
+      Arquivos baixados do Drive ficam em diretórios temporários do próprio computador,
+      durante a execução.
+    </li>
+    <li>Nenhum dado é gravado em servidores do mantenedor, porque não existem servidores.</li>
+  </ul>
+
+  <h2>Compartilhamento</h2>
+  <p>
+    Nenhum dado é compartilhado, vendido ou transmitido a terceiros. O único destino das
+    requisições de rede são as próprias APIs do Google, a partir do computador do usuário.
+  </p>
+
+  <h2>Retenção e revogação</h2>
+  <p>
+    O usuário pode revogar o acesso a qualquer momento em
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+    A revogação invalida o token imediatamente. Para apagar os dados locais, basta remover
+    o token do chaveiro e os arquivos temporários.
+  </p>
+
+  <h2>Escopo de uso</h2>
+  <p>
+    O aplicativo não é distribuído publicamente e não possui usuários além do mantenedor.
+    Por isso não há canal de suporte: não existem terceiros cujos dados possam ser tratados
+    por esta política.
+  </p>
+
+  <footer>
+    <a href="index.html">&larr; OpenClaw</a> &middot;
+    <a href="terms.html">Termos de uso</a>
+  </footer>
+</main>
+</body>
+</html>

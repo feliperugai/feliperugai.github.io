@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>OpenClaw</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa;
+    --fg: #1a1a18;
+    --muted: #6b6b63;
+    --rule: #e3e3dd;
+    --link: #2f5d50;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#161614; --fg:#eceae4; --muted:#9a9a90; --rule:#2e2e2a; --link:#8fc5b2; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 38rem; margin: 0 auto; padding: 5rem 1.5rem 6rem; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  h2 { font-size: 1rem; margin: 2.5rem 0 .6rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+  li { margin-bottom: .35rem; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>OpenClaw</h1>
+  <p class="sub">Ferramenta pessoal de linha de comando para automatizar planilhas no Google Drive.</p>
+
+  <p>
+    OpenClaw é um uso particular do <a href="https://gogcli.sh/">gogcli</a>, executado no
+    computador do próprio mantenedor. Ele importa extratos bancários em formato OFX e os
+    lança numa planilha de controle de despesas hospedada no Google Drive.
+  </p>
+
+  <h2>O que ele acessa</h2>
+  <ul>
+    <li>Google Drive e Google Sheets, apenas da conta que autoriza o aplicativo.</li>
+    <li>Somente os arquivos que o próprio usuário indica.</li>
+  </ul>
+
+  <h2>Onde ele roda</h2>
+  <p>
+    Localmente, via terminal. Não existe servidor, site ou serviço hospedado: as únicas
+    requisições de rede partem do computador do usuário diretamente para as APIs do Google.
+  </p>
+
+  <h2>Quem usa</h2>
+  <p>
+    Apenas o mantenedor. O aplicativo não é distribuído nem oferecido a terceiros.
+  </p>
+
+  <footer>
+    <a href="privacy.html">Política de privacidade</a> &middot;
+    <a href="terms.html">Termos de uso</a>
+  </footer>
+</main>
+</body>
+</html>
